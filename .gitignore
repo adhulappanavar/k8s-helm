@@ -2,4 +2,5 @@ terraform.tfvars
 terraform.tfstate*
 .terraform/*
 admin.conf
-
+.DS_Store
+**/.DS_Store

@@ -1,6 +1,0 @@
-.idea/*
-ssh/harshal*
-admin.conf
-terraform.tfstate*
-terraform.tfvars
-*.yaml
