@@ -96,6 +96,6 @@ wandering-seastar	1       	Sun Dec  9 03:27:25 2018	DEPLOYEDprometheus-8.1.0    
 wordpress        	1       	Tue Dec 25 21:26:35 2018	DEPLOYEDwordpress-5.0.2      	5.0.2      	akdwordpress
 
 ╭─anidhula@WKMIN2685885 ~/learn/helm/wordpress   25/Dec/18|21:38:28
-╰─$ helm delete wordpress
-release "wordpress" deleted
+╰─$ helm delete helm-gb-chart
+release "helm-gb-chart" deleted
 ```
