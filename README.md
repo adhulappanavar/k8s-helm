@@ -43,7 +43,12 @@ Error: Get https://localhost:6443/api/v1/namespaces/kube-system/pods?labelSelect
 docker-for-desktop
 ```
 > increase the Docker available Memory from 2GB to 8GB, and Swap from 1GB to 4GB, and it seems better now...
-
+```bash
+╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|19:40:32
+╰─$ helm version
+Client: &version.Version{SemVer:"v2.12.1", GitCommit:"02a47c7249b1fc6d8fd3b94e6b4babf9d818144e", GitTreeState:"clean"}
+Server: &version.Version{SemVer:"v2.12.1", GitCommit:"02a47c7249b1fc6d8fd3b94e6b4babf9d818144e", GitTreeState:"clean"}
+```
 
 
 ```bash
