@@ -1,7 +1,7 @@
 Example chart for helm
 
 Source : https://github.com/erwindeg/k8s-helm 
-Youtube tutorial : https://www.youtube.com/watch?v=TXZBuBQpm-Q
+Youtube tutorial : https://youtu.be/TXZBuBQpm-Q?t=508
 
 Check which Kubernetes context a you connected to (GCP, Minikube, AWS, docker-for-desktop) kubectl get current-context
 
