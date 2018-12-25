@@ -7,23 +7,20 @@ Check which Kubernetes context a you connected to (GCP, Minikube, AWS, docker-fo
 
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm ‹master› 23/Dec/18|15:13:29 
 ╰─$ kubectl config current-context 
-
-
 docker-for-desktop
-
->Check the existing namespaces kubectl get namespaces 
-
+```
+```bash
+Check the existing namespaces kubectl get namespaces 
 
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm ‹master› 23/Dec/18|15:16:52 
 ╰─$ kubectl get namespaces 
-
-
 NAME STATUS AGE default Active 15d 
 docker Active 15d 
 kube-public Active 15d 
 kube-system Active 15d 
 kubeapps Active 6d
-
+```
+```bash
 ╰─$ pwd /Users/anidhula/learn/helm/k8s-helm
 
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm ‹master› 23/Dec/18|15:20:50 
@@ -34,7 +31,22 @@ helm install --name helm-gb-chart --namespace helm-go ./helm_chart_guestbook
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm ‹master› 23/Dec/18|15:31:05 
 ╰─$ helm install --name helm-gb-chart --namespace helm-go ./helm_chart_guestbook 
 Error: incompatible versions client[v2.12.1] server[v2.11.0]
+```
+> Reinstalled the Docker for Mac
+```bash
+╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|19:31:54
+╰─$ helm version                                                            1 ↵
+Client: &version.Version{SemVer:"v2.12.1", GitCommit:"02a47c7249b1fc6d8fd3b94e6b4babf9d818144e", GitTreeState:"clean"}
+Error: Get https://localhost:6443/api/v1/namespaces/kube-system/pods?labelSelector=app%3Dhelm%2Cname%3Dtiller: net/http: TLS handshake timeout
+╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|19:32:13
+╰─$ kubectl config current-context                                          1 ↵
+docker-for-desktop
+```
+> increase the Docker available Memory from 2GB to 8GB, and Swap from 1GB to 4GB, and it seems better now...
 
+
+
+```bash
 
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|19:41:19
 ╰─$ kubectl -n helm-go get pods
