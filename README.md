@@ -83,9 +83,10 @@ redis-slave    ClusterIP   10.106.249.22   <none>        6379/TCP       9m
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|20:57:07
 ╰─
 ```
+> Clean up 
 
 ```bash
-╭─anidhula@WKMIN2685885 ~/learn/helm/wordpress   25/Dec/18|21:38:07
+╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm   25/Dec/18|21:38:07
 ╰─$ helm list                                                               1 ↵
 NAME             	REVISION	UPDATED                 	STATUS  CHART                	APP VERSION	NAMESPACE
 example          	1       	Sun Dec  9 02:01:45 2018	DEPLOYEDmychart-0.1.0        	1.0        	default
@@ -95,7 +96,7 @@ my-confluent-oss 	1       	Sun Dec  9 03:24:34 2018	DEPLOYEDcp-helm-charts-0.1.0
 wandering-seastar	1       	Sun Dec  9 03:27:25 2018	DEPLOYEDprometheus-8.1.0     	2.5.0      	default
 wordpress        	1       	Tue Dec 25 21:26:35 2018	DEPLOYEDwordpress-5.0.2      	5.0.2      	akdwordpress
 
-╭─anidhula@WKMIN2685885 ~/learn/helm/wordpress   25/Dec/18|21:38:28
+╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm   25/Dec/18|21:38:28
 ╰─$ helm delete helm-gb-chart
 release "helm-gb-chart" deleted
 ```
