@@ -75,3 +75,11 @@ redis-slave    ClusterIP   10.106.249.22   <none>        6379/TCP       9m
   
   
 ```
+
+> Open the app in the browser
+```bash
+╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|20:56:50
+╰─$ open http://localhost:32080
+╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|20:57:07
+╰─
+```
