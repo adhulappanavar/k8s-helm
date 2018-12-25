@@ -83,3 +83,19 @@ redis-slave    ClusterIP   10.106.249.22   <none>        6379/TCP       9m
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|20:57:07
 ╰─
 ```
+
+```bash
+╭─anidhula@WKMIN2685885 ~/learn/helm/wordpress   25/Dec/18|21:38:07
+╰─$ helm list                                                               1 ↵
+NAME             	REVISION	UPDATED                 	STATUS  CHART                	APP VERSION	NAMESPACE
+example          	1       	Sun Dec  9 02:01:45 2018	DEPLOYEDmychart-0.1.0        	1.0        	default
+helm-gb-chart    	1       	Tue Dec 25 19:41:18 2018	DEPLOYEDGuestbook-Chart-1.0.0	           	helm-go
+kubeapps         	1       	Mon Dec 17 04:43:41 2018	DEPLOYEDkubeapps-1.1.0       	v1.0.0     	kubeapps
+my-confluent-oss 	1       	Sun Dec  9 03:24:34 2018	DEPLOYEDcp-helm-charts-0.1.0 	1.0        	default
+wandering-seastar	1       	Sun Dec  9 03:27:25 2018	DEPLOYEDprometheus-8.1.0     	2.5.0      	default
+wordpress        	1       	Tue Dec 25 21:26:35 2018	DEPLOYEDwordpress-5.0.2      	5.0.2      	akdwordpress
+
+╭─anidhula@WKMIN2685885 ~/learn/helm/wordpress   25/Dec/18|21:38:28
+╰─$ helm delete wordpress
+release "wordpress" deleted
+```
