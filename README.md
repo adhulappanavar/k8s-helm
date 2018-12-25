@@ -7,11 +7,17 @@ Check which Kubernetes context a you connected to (GCP, Minikube, AWS, docker-fo
 
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm ‹master› 23/Dec/18|15:13:29 
 ╰─$ kubectl config current-context 
+
+
 docker-for-desktop
 
 Check the existing namespaces kubectl get namespaces 
+
+
 ╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm ‹master› 23/Dec/18|15:16:52 
 ╰─$ kubectl get namespaces 
+
+
 NAME STATUS AGE default Active 15d 
 docker Active 15d 
 kube-public Active 15d 
@@ -29,3 +35,15 @@ helm install --name helm-gb-chart --namespace helm-go ./helm_chart_guestbook
 ╰─$ helm install --name helm-gb-chart --namespace helm-go ./helm_chart_guestbook 
 Error: incompatible versions client[v2.12.1] server[v2.11.0]
 
+
+╭─anidhula@WKMIN2685885 ~/learn/helm/k8s-helm  ‹master›  25/Dec/18|19:41:19
+╰─$ kubectl -n helm-go get pods
+
+
+NAME                            READY   STATUS    RESTARTS   AGE
+frontend-6695dc668-nlvrr        1/1     Running   0          4m
+frontend-6695dc668-w8r5v        1/1     Running   0          4m
+frontend-6695dc668-xpb84        1/1     Running   0          4m
+redis-master-6c46f6cfb8-9zkzp   1/1     Running   0          4m
+redis-slave-584c66c5b5-k7g7s    1/1     Running   0          4m
+redis-slave-584c66c5b5-kz84r    1/1     Running   0          4m
